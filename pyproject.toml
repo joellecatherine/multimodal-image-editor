@@ -1,0 +1,23 @@
+[project]
+name = "multimodal-editor"
+version = "0.1.0"
+description = "A Streamlit app for multimodal image inpainting."
+authors = [
+    {name = "joellecatherine",email = "joellecatherineackermann@gmail.com"}
+]
+readme = "README.md"
+requires-python = "^3.11"
+dependencies = [
+    "torch (==2.3.1)",
+    "streamlit (>=1.49.1,<2.0.0)",
+    "diffusers (>=0.35.1,<0.36.0)",
+    "transformers (>=4.56.1,<5.0.0)",
+    "pillow (>=11.3.0,<12.0.0)",
+    "numpy (>=2.3.2,<3.0.0)",
+    "accelerate (>=1.10.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
